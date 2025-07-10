@@ -48,11 +48,10 @@ def email_update(diff_text: str):
         + diff_text[:5000]
     )
 
-    ctx = ssl.create_default_context()
-    with smtplib.SMTP("smtp.gmail.com", 587) as server:
-        server.starttls(context=ctx)
-        server.login(user, pwd)
-        server.send_message(msg)
+    with smtplib.SMTP("smtp.gmail.com", 587) as s:
+      s.starttls(context=ssl.create_default_context())
+      s.login(user, pwd)
+      s.send_message(msg)
     print("Alert e-mail sent.")
 
 
