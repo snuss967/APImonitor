@@ -38,9 +38,11 @@ def load_previous():
 
 def email_update(diff_text: str):
     msg = EmailMessage()
+    user, pwd, to_addr = map(os.getenv, ("EMAIL_USER", "EMAIL_PASSWORD", "RECIPIENT"))
+  
     msg["Subject"] = "API Update Detected"
-    msg["From"] = os.getenv("EMAIL_USER")
-    msg["To"] = os.getenv("RECIPIENT")
+    msg["From"] = user
+    msg["To"] = to_addr
     msg.set_content(
         "The record changed.\n\nUnified diff (truncated to 5 000 chars):\n\n"
         + diff_text[:5000]
@@ -49,7 +51,7 @@ def email_update(diff_text: str):
     ctx = ssl.create_default_context()
     with smtplib.SMTP("smtp.gmail.com", 587) as server:
         server.starttls(context=ctx)
-        server.login(os.getenv("EMAIL_USER"), os.getenv("EMAIL_PASSWORD"))
+        server.login(user, pwd)
         server.send_message(msg)
     print("Alert e-mail sent.")
 
