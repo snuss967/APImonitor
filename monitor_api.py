@@ -37,14 +37,14 @@ def fetch_latest_html():
     return soup.prettify()
     
 def load_previous_json():
-    if os.path.isfile(FILE):
-        with open(FILE, "r") as fh:
+    if os.path.isfile(JSON_FILE):
+        with open(JSON_FILE, "r") as fh:
             return json.load(fh)
     return None
 
 def load_previous_html():
-    if os.path.isfile(FILE):
-        with open(FILE, "r", encoding="utf-8") as fh:
+    if os.path.isfile(HTML_FILE):
+        with open(HTML_FILE, "r", encoding="utf-8") as fh:
             return fh.read()
     return None
 
