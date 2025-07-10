@@ -25,6 +25,7 @@ FILE = "study.json"
 
 
 def fetch_latest():
+    print(URL)
     resp = requests.get(URL, timeout=30)
     resp.raise_for_status()
     return resp.json()
