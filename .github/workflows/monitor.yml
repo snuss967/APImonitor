@@ -36,14 +36,14 @@ jobs:
           python monitor_api.py
         continue-on-error: true
 
-      - name: Commit updated JSON (if any)
+      - name: Commit updated JSON and HTML files (if any)
         run: |
           # Only commit when study.json actually changed
           if git status --porcelain | grep -q "study.json"; then
             git config user.name  "github-actions[bot]"
             git config user.email "github-actions[bot]@users.noreply.github.com"
-            git add study.json
-            git commit -m "Update study.json ($(date -u +'%Y-%m-%dT%H:%M:%SZ'))"
+            git add study.json website.html
+            git commit -m "Update study.json and website.html ($(date -u +'%Y-%m-%dT%H:%M:%SZ'))"
             git push
           else
             echo "No file changes to commit."
