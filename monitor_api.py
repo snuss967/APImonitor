@@ -110,7 +110,7 @@ def main():
                     fromfile="old",
                     tofile="new",
                     lineterm="",
-                )
+                ))
         else:
             diff = "No previous snapshot existed; this is the first run."
 
