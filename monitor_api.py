@@ -9,10 +9,12 @@ Required secrets (exposed as env vars by the workflow):
   EMAIL_PASSWORD   – Gmail App-Password (not your login pwd)
   RECIPIENT        – where the alert should go (hard-coded below too)
   API_URL          – API URL to monitor
+  WEBSITE_URL      – Website URL to monitor
 """
 
 import difflib
 import json
+from bs4 import BeautifulSoup
 import os
 import smtplib
 import ssl
@@ -20,26 +22,37 @@ from email.message import EmailMessage
 
 import requests
 
-FILE = "study.json"
+JSON_FILE = "study.json"
+HTML_FILE = "website.html"
 
-def fetch_latest():
+def fetch_latest_json():
     resp = requests.get(url=os.getenv("API_URL"))
     resp.raise_for_status()
     return resp.json()
 
-
-def load_previous():
+def fetch_latest_html():
+    resp = requests.get(url=os.getenv("WEBSITE_URL"))
+    resp.raise_for_status()
+    soup = BeautifulSoup(resp.text, "html.parser")
+    return soup.prettify()
+    
+def load_previous_json():
     if os.path.isfile(FILE):
         with open(FILE, "r") as fh:
             return json.load(fh)
     return None
 
+def load_previous_html():
+    if os.path.isfile(FILE):
+        with open(FILE, "r", encoding="utf-8") as fh:
+            return fh.read()
+    return None
 
-def email_update(diff_text: str):
+def email_update(diff_text: str, subject: str):
     msg = EmailMessage()
     user, pwd, to_addr = map(os.getenv, ("EMAIL_USER", "EMAIL_PASSWORD", "RECIPIENT"))
   
-    msg["Subject"] = "API Update Detected"
+    msg["Subject"] = subject
     msg["From"] = user
     msg["To"] = to_addr
     msg.set_content(
@@ -54,15 +67,19 @@ def email_update(diff_text: str):
     print("Alert e-mail sent.")
 
 
-def save_latest(data):
-    with open(FILE, "w") as fh:
+def save_latest_json(data, file_path):
+    with open(file_path, "w") as fh:
         json.dump(data, fh, indent=2, sort_keys=True)
-    print("Saved new copy to", FILE)
+    print("Saved new copy to", file_path)
 
+def save_latest_html(data, file_path):
+    with open(file_path, "w", encoding="utf-8") as fh:
+        fh.write(data)
+    print("Saved new copy to", file_path)
 
 def main():
-    latest = fetch_latest()
-    previous = load_previous()
+    latest = fetch_latest_json()
+    previous = load_previous_json()
 
     if previous != latest:
         # Build a human-readable diff for the e-mail body
@@ -74,10 +91,33 @@ def main():
         else:
             diff = "No previous snapshot existed; this is the first run."
 
-        email_update(diff)
-        save_latest(latest)
+        email_update(diff, "API Update Detected")
+        save_latest_json(latest, JSON_FILE)
     else:
-        print("No change detected.")
+        print("No change detected in the JSON.")
+
+    latest = fetch_latest_html()
+    previous = load_previous_html()
+
+    if previous != latest:
+        # Build a human-readable diff for the e-mail body
+        diff = ""
+        if previous is not None:
+            diff = "\n".join(
+                difflib.unified_diff(
+                    previous.splitlines(),
+                    latest.splitlines(),
+                    fromfile="old",
+                    tofile="new",
+                    lineterm="",
+                )
+        else:
+            diff = "No previous snapshot existed; this is the first run."
+
+        email_update(diff, "HTML Update Detected")
+        save_latest_html(latest, HTML_FILE)
+    else:
+        print("No change detected in the HTML.")
 
 
 if __name__ == "__main__":
