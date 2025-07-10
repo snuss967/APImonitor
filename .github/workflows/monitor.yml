@@ -1,0 +1,44 @@
+name: Monitor-Trial
+
+on:
+  schedule:
+    # Every 30 minutes
+    - cron: "*/30 * * * *"
+  workflow_dispatch:  # manual trigger if you ever need it
+
+permissions:
+  contents: write  # allow the bot to commit study.json
+
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: python -m pip install --upgrade pip requests
+
+      - name: Run monitor script
+        run: |
+          python monitor_api.py
+        continue-on-error: true
+
+      - name: Commit updated JSON (if any)
+        run: |
+          # Only commit when study.json actually changed
+          if git status --porcelain | grep -q "study.json"; then
+            git config user.name  "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git add study.json
+            git commit -m "Update study.json ($(date -u +'%Y-%m-%dT%H:%M:%SZ'))"
+            git push
+          else
+            echo "No file changes to commit."
+          fi
