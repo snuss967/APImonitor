@@ -23,10 +23,11 @@ jobs:
           python-version: "3.11"
 
       - name: Install dependencies
-        run: pip install requests
+        run: pip install requests beautifulsoup4
 
       - name: Run monitor script
         env:
+          WEBSITE_URL:  ${{ secrets.WEBSITE_URL }}
           API_URL:  ${{ secrets.API_URL }}
           EMAIL_PASSWORD:  ${{ secrets.EMAIL_PASSWORD }}
           EMAIL_USER:    ${{ secrets.EMAIL_USER }}
