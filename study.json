@@ -1,0 +1,998 @@
+{
+  "derivedSection": {
+    "conditionBrowseModule": {
+      "ancestors": [
+        {
+          "id": "D020966",
+          "term": "Muscular Disorders, Atrophic"
+        },
+        {
+          "id": "D009135",
+          "term": "Muscular Diseases"
+        },
+        {
+          "id": "D009140",
+          "term": "Musculoskeletal Diseases"
+        },
+        {
+          "id": "D009468",
+          "term": "Neuromuscular Diseases"
+        },
+        {
+          "id": "D009422",
+          "term": "Nervous System Diseases"
+        },
+        {
+          "id": "D030342",
+          "term": "Genetic Diseases, Inborn"
+        },
+        {
+          "id": "D040181",
+          "term": "Genetic Diseases, X-Linked"
+        }
+      ],
+      "browseBranches": [
+        {
+          "abbrev": "BC05",
+          "name": "Musculoskeletal Diseases"
+        },
+        {
+          "abbrev": "BC10",
+          "name": "Nervous System Diseases"
+        },
+        {
+          "abbrev": "BC16",
+          "name": "Diseases and Abnormalities at or Before Birth"
+        },
+        {
+          "abbrev": "All",
+          "name": "All Conditions"
+        },
+        {
+          "abbrev": "BC23",
+          "name": "Symptoms and General Pathology"
+        },
+        {
+          "abbrev": "Rare",
+          "name": "Rare Diseases"
+        }
+      ],
+      "browseLeaves": [
+        {
+          "asFound": "Muscular Dystrophy",
+          "id": "M12093",
+          "name": "Muscular Dystrophies",
+          "relevance": "HIGH"
+        },
+        {
+          "asFound": "Muscular Dystrophy, Duchenne",
+          "id": "M22185",
+          "name": "Muscular Dystrophy, Duchenne",
+          "relevance": "HIGH"
+        },
+        {
+          "id": "M12092",
+          "name": "Muscular Diseases",
+          "relevance": "LOW"
+        },
+        {
+          "id": "M4589",
+          "name": "Atrophy",
+          "relevance": "LOW"
+        },
+        {
+          "id": "M22697",
+          "name": "Muscular Disorders, Atrophic",
+          "relevance": "LOW"
+        },
+        {
+          "id": "M12097",
+          "name": "Musculoskeletal Diseases",
+          "relevance": "LOW"
+        },
+        {
+          "id": "M12411",
+          "name": "Neuromuscular Diseases",
+          "relevance": "LOW"
+        },
+        {
+          "id": "M23686",
+          "name": "Genetic Diseases, Inborn",
+          "relevance": "LOW"
+        },
+        {
+          "id": "M24877",
+          "name": "Genetic Diseases, X-Linked",
+          "relevance": "LOW"
+        },
+        {
+          "asFound": "Muscular Dystrophy",
+          "id": "T3963",
+          "name": "Muscular Dystrophy",
+          "relevance": "HIGH"
+        },
+        {
+          "asFound": "Duchenne",
+          "id": "T698",
+          "name": "Becker Muscular Dystrophy",
+          "relevance": "HIGH"
+        },
+        {
+          "asFound": "Duchenne Muscular Dystrophy",
+          "id": "T1945",
+          "name": "Duchenne Muscular Dystrophy",
+          "relevance": "HIGH"
+        }
+      ],
+      "meshes": [
+        {
+          "id": "D009136",
+          "term": "Muscular Dystrophies"
+        },
+        {
+          "id": "D020388",
+          "term": "Muscular Dystrophy, Duchenne"
+        }
+      ]
+    },
+    "interventionBrowseModule": {
+      "browseBranches": [
+        {
+          "abbrev": "PhSol",
+          "name": "Pharmaceutical Solutions"
+        },
+        {
+          "abbrev": "All",
+          "name": "All Drugs and Chemicals"
+        }
+      ],
+      "browseLeaves": [
+        {
+          "id": "M21860",
+          "name": "Pharmaceutical Solutions",
+          "relevance": "LOW"
+        }
+      ]
+    },
+    "miscInfoModule": {
+      "removedCountries": [
+        "Canada"
+      ],
+      "versionHolder": "2025-07-10"
+    }
+  },
+  "hasResults": false,
+  "protocolSection": {
+    "armsInterventionsModule": {
+      "armGroups": [
+        {
+          "description": "Participants will receive eteplirsen 100 mg/kg once weekly for at least 4 weeks, followed by eteplirsen 200 mg/kg once weekly for at least 4 weeks.",
+          "interventionNames": [
+            "Drug: Eteplirsen"
+          ],
+          "label": "Part 1: Eteplirsen",
+          "type": "EXPERIMENTAL"
+        },
+        {
+          "description": "Randomized participants will receive eteplirsen 30 mg/kg once weekly for up to 144 weeks.",
+          "interventionNames": [
+            "Drug: Eteplirsen"
+          ],
+          "label": "Part 2: Eteplirsen 30 mg/kg",
+          "type": "ACTIVE_COMPARATOR"
+        },
+        {
+          "description": "Randomized participants will receive eteplirsen 100 mg/kg once weekly for up to 144 weeks.",
+          "interventionNames": [
+            "Drug: Eteplirsen"
+          ],
+          "label": "Part 2: Eteplirsen 100 mg/kg",
+          "type": "EXPERIMENTAL"
+        },
+        {
+          "description": "Randomized participants will receive eteplirsen 200 mg/kg once weekly for up to 144 weeks.",
+          "interventionNames": [
+            "Drug: Eteplirsen"
+          ],
+          "label": "Part 2: Eteplirsen 200 mg/kg",
+          "type": "EXPERIMENTAL"
+        }
+      ],
+      "interventions": [
+        {
+          "armGroupLabels": [
+            "Part 1: Eteplirsen",
+            "Part 2: Eteplirsen 100 mg/kg",
+            "Part 2: Eteplirsen 200 mg/kg",
+            "Part 2: Eteplirsen 30 mg/kg"
+          ],
+          "description": "Solution for intravenous (IV) infusion.",
+          "name": "Eteplirsen",
+          "otherNames": [
+            "AVI-4658",
+            "EXONDYS 51",
+            "EXONDYS"
+          ],
+          "type": "DRUG"
+        }
+      ]
+    },
+    "conditionsModule": {
+      "conditions": [
+        "Muscular Dystrophy, Duchenne"
+      ],
+      "keywords": [
+        "Duchenne muscular dystrophy",
+        "Exon Skipping",
+        "Exon 51",
+        "North Star Ambulatory Assessment",
+        "Ambulatory",
+        "DMD",
+        "Pediatric",
+        "Duchenne",
+        "EXONDYS",
+        "MIS51ON"
+      ]
+    },
+    "contactsLocationsModule": {
+      "locations": [
+        {
+          "city": "Birmingham",
+          "country": "United States",
+          "facility": "University of Alabama at Birmingham",
+          "geoPoint": {
+            "lat": 33.52066,
+            "lon": -86.80249
+          },
+          "state": "Alabama",
+          "zip": "35233"
+        },
+        {
+          "city": "Gainesville",
+          "country": "United States",
+          "facility": "University of Florida",
+          "geoPoint": {
+            "lat": 29.65163,
+            "lon": -82.32483
+          },
+          "state": "Florida",
+          "zip": "32610-3010"
+        },
+        {
+          "city": "Atlanta",
+          "country": "United States",
+          "facility": "Rare Disease Research, LLC",
+          "geoPoint": {
+            "lat": 33.749,
+            "lon": -84.38798
+          },
+          "state": "Georgia",
+          "zip": "30318"
+        },
+        {
+          "city": "Bogot\u00e1",
+          "country": "Colombia",
+          "facility": "Hospital Universitario San Ignacio",
+          "geoPoint": {
+            "lat": 4.60971,
+            "lon": -74.08175
+          },
+          "zip": "110231"
+        },
+        {
+          "city": "Medellin",
+          "country": "Colombia",
+          "facility": "Instituto Neurologico de Colombia (INDEC)",
+          "geoPoint": {
+            "lat": 6.25184,
+            "lon": -75.56359
+          },
+          "zip": "50012"
+        },
+        {
+          "city": "Medellin",
+          "country": "Colombia",
+          "facility": "Hospital Pablo Tob\u00f3n Uribe",
+          "geoPoint": {
+            "lat": 6.25184,
+            "lon": -75.56359
+          },
+          "zip": "50034"
+        },
+        {
+          "city": "Brno",
+          "country": "Czechia",
+          "facility": "Brno Klinika detske neurologie",
+          "geoPoint": {
+            "lat": 49.19522,
+            "lon": 16.60796
+          },
+          "zip": "613 00"
+        },
+        {
+          "city": "Praha 5",
+          "country": "Czechia",
+          "facility": "Fakultni nemocnice v Motole",
+          "geoPoint": {
+            "lat": 50.08804,
+            "lon": 14.42076
+          },
+          "zip": "150 06"
+        },
+        {
+          "city": "Copenhagen",
+          "country": "Denmark",
+          "facility": "Rigshospitalet Copenhagen University Hospital",
+          "geoPoint": {
+            "lat": 55.67594,
+            "lon": 12.56553
+          },
+          "zip": "2100"
+        },
+        {
+          "city": "Bron",
+          "country": "France",
+          "facility": "Hopital Femme Mere Enfant",
+          "geoPoint": {
+            "lat": 45.73333,
+            "lon": 4.91667
+          },
+          "zip": "69677"
+        },
+        {
+          "city": "Paris",
+          "country": "France",
+          "facility": "Hopital Armand Trousseau",
+          "geoPoint": {
+            "lat": 48.85341,
+            "lon": 2.3488
+          },
+          "zip": "75571"
+        },
+        {
+          "city": "Strasbourg",
+          "country": "France",
+          "facility": "CHRU de Strasbourg",
+          "geoPoint": {
+            "lat": 48.58392,
+            "lon": 7.74553
+          },
+          "zip": "67098"
+        },
+        {
+          "city": "Berlin",
+          "country": "Germany",
+          "facility": "Charit\u00e9 Universit\u00e4tsmedizin Berlin CVK",
+          "geoPoint": {
+            "lat": 52.52437,
+            "lon": 13.41053
+          },
+          "zip": "13353"
+        },
+        {
+          "city": "Essen",
+          "country": "Germany",
+          "facility": "Universit\u00e4tsklinikum Essen",
+          "geoPoint": {
+            "lat": 51.45657,
+            "lon": 7.01228
+          },
+          "zip": "45147"
+        },
+        {
+          "city": "Freiburg",
+          "country": "Germany",
+          "facility": "Universit\u00e4tsklinikum Freiburg",
+          "geoPoint": {
+            "lat": 47.9959,
+            "lon": 7.85222
+          },
+          "zip": "79106"
+        },
+        {
+          "city": "Marousi",
+          "country": "Greece",
+          "facility": "IASO Children's Hospital",
+          "geoPoint": {
+            "lat": 38.05,
+            "lon": 23.8
+          },
+          "state": "Attiki",
+          "zip": "151 23"
+        },
+        {
+          "city": "Budapest",
+          "country": "Hungary",
+          "facility": "Semmelweis Egyetem Genomikai Medicina \u00e9s Ritka Betegsegek Intezete",
+          "geoPoint": {
+            "lat": 47.49801,
+            "lon": 19.03991
+          },
+          "zip": "1082"
+        },
+        {
+          "city": "Ahmedabad",
+          "country": "India",
+          "facility": "Royal Institute of Child Neurosciences",
+          "geoPoint": {
+            "lat": 23.02579,
+            "lon": 72.58727
+          },
+          "zip": "380054"
+        },
+        {
+          "city": "Bengaluru",
+          "country": "India",
+          "facility": "Aster RV Hospital",
+          "geoPoint": {
+            "lat": 12.97194,
+            "lon": 77.59369
+          },
+          "zip": "560078"
+        },
+        {
+          "city": "Hyderabad",
+          "country": "India",
+          "facility": "Nizam's Institute of Medical Sciences",
+          "geoPoint": {
+            "lat": 17.38405,
+            "lon": 78.45636
+          },
+          "zip": "500082"
+        },
+        {
+          "city": "Madurai",
+          "country": "India",
+          "facility": "Jaicare Hospital (A Unit of Sarvee Integra Pvt Ltd.)",
+          "geoPoint": {
+            "lat": 9.91769,
+            "lon": 78.11898
+          },
+          "zip": "626022"
+        },
+        {
+          "city": "New Delhi",
+          "country": "India",
+          "facility": "All India Institute of Medical Sciences",
+          "geoPoint": {
+            "lat": 28.63576,
+            "lon": 77.22445
+          },
+          "zip": "110029"
+        },
+        {
+          "city": "New Delhi",
+          "country": "India",
+          "facility": "Sir Ganga Ram Hospital",
+          "geoPoint": {
+            "lat": 28.63576,
+            "lon": 77.22445
+          },
+          "zip": "110060"
+        },
+        {
+          "city": "Pune",
+          "country": "India",
+          "facility": "Deenanath Mangeshkar Hospital & Research Centre",
+          "geoPoint": {
+            "lat": 18.51957,
+            "lon": 73.85535
+          },
+          "zip": "411004"
+        },
+        {
+          "city": "Vellore",
+          "country": "India",
+          "facility": "Christian Medical College",
+          "geoPoint": {
+            "lat": 12.9184,
+            "lon": 79.13255
+          },
+          "zip": "632004"
+        },
+        {
+          "city": "Dublin 1",
+          "country": "Ireland",
+          "facility": "Children's Health Ireland (CHI) at Temple Street",
+          "geoPoint": {
+            "lat": 53.33306,
+            "lon": -6.24889
+          },
+          "zip": "D01 XD99"
+        },
+        {
+          "city": "Genova",
+          "country": "Italy",
+          "facility": "IRCCS Instituto Gianna Gaslini",
+          "geoPoint": {
+            "lat": 44.40478,
+            "lon": 8.94438
+          },
+          "zip": "16147"
+        },
+        {
+          "city": "Rome",
+          "country": "Italy",
+          "facility": "Fondazione Policlinico Universitario A. Gemelli- IRCCS",
+          "geoPoint": {
+            "lat": 41.89193,
+            "lon": 12.51133
+          },
+          "zip": "00168"
+        },
+        {
+          "city": "Amman",
+          "country": "Jordan",
+          "facility": "The Specialty Hospital (TSH)/Advanced Clinical Center",
+          "geoPoint": {
+            "lat": 31.95522,
+            "lon": 35.94503
+          },
+          "zip": "11194"
+        },
+        {
+          "city": "Amman",
+          "country": "Jordan",
+          "facility": "Istiklal Hosptial (IST)",
+          "geoPoint": {
+            "lat": 31.95522,
+            "lon": 35.94503
+          },
+          "zip": "11196"
+        },
+        {
+          "city": "Irbid",
+          "country": "Jordan",
+          "facility": "Irbid Specialty Hospital",
+          "geoPoint": {
+            "lat": 32.55556,
+            "lon": 35.85
+          },
+          "zip": "22110"
+        },
+        {
+          "city": "Irbid",
+          "country": "Jordan",
+          "facility": "Pharmaceutical Research Center/Jordan University of Science and Technology",
+          "geoPoint": {
+            "lat": 32.55556,
+            "lon": 35.85
+          },
+          "zip": "22110"
+        },
+        {
+          "city": "Daegu",
+          "country": "Korea, Republic of",
+          "facility": "Kyungpook National University Chilgok Hospital",
+          "geoPoint": {
+            "lat": 35.87028,
+            "lon": 128.59111
+          },
+          "zip": "41404"
+        },
+        {
+          "city": "Seoul",
+          "country": "Korea, Republic of",
+          "facility": "Seoul National University Hospital",
+          "geoPoint": {
+            "lat": 37.566,
+            "lon": 126.9784
+          },
+          "zip": "03080"
+        },
+        {
+          "city": "Seoul",
+          "country": "Korea, Republic of",
+          "facility": "Samsung Medical Center",
+          "geoPoint": {
+            "lat": 37.566,
+            "lon": 126.9784
+          },
+          "zip": "6351"
+        },
+        {
+          "city": "Yangsan",
+          "country": "Korea, Republic of",
+          "facility": "Pusan National University Yangsan Hospital",
+          "geoPoint": {
+            "lat": 35.34199,
+            "lon": 129.03358
+          },
+          "zip": "50612"
+        },
+        {
+          "city": "Culiac\u00e1n",
+          "country": "Mexico",
+          "facility": "Neurociencias Estudios Cl\u00ednicos S.C.",
+          "geoPoint": {
+            "lat": 24.79032,
+            "lon": -107.38782
+          },
+          "state": "Sinaloa",
+          "zip": "80020"
+        },
+        {
+          "city": "Durango",
+          "country": "Mexico",
+          "facility": "Instituto de Investigaciones Clinicas para la Salud A.C",
+          "geoPoint": {
+            "lat": 24.02032,
+            "lon": -104.65756
+          },
+          "zip": "34000"
+        },
+        {
+          "city": "Leiden",
+          "country": "Netherlands",
+          "facility": "Leids Universitair Medisch Centrum",
+          "geoPoint": {
+            "lat": 52.15833,
+            "lon": 4.49306
+          },
+          "zip": "2333 ZC"
+        },
+        {
+          "city": "Nijmegen",
+          "country": "Netherlands",
+          "facility": "Radboud University Nijmegen Medical Centre",
+          "geoPoint": {
+            "lat": 51.8425,
+            "lon": 5.85278
+          },
+          "zip": "6525GA"
+        },
+        {
+          "city": "Auckland",
+          "country": "New Zealand",
+          "facility": "New Zealand Clinical Research - Auckland",
+          "geoPoint": {
+            "lat": -36.84853,
+            "lon": 174.76349
+          },
+          "zip": "1010"
+        },
+        {
+          "city": "Oslo",
+          "country": "Norway",
+          "facility": "Oslo Universitetssykehus HF Rikshospitalet",
+          "geoPoint": {
+            "lat": 59.91273,
+            "lon": 10.74609
+          },
+          "zip": "0450"
+        },
+        {
+          "city": "Stavanger",
+          "country": "Norway",
+          "facility": "Children's Department and Department for Children's Habilitation at Stavanger University Hospital",
+          "geoPoint": {
+            "lat": 58.97005,
+            "lon": 5.73332
+          },
+          "zip": "4011"
+        },
+        {
+          "city": "Gdansk",
+          "country": "Poland",
+          "facility": "Klinika Neurologii Rozwojowej",
+          "geoPoint": {
+            "lat": 54.35205,
+            "lon": 18.64637
+          },
+          "state": "Pomorskie",
+          "zip": "80-211"
+        },
+        {
+          "city": "Bucharest",
+          "country": "Romania",
+          "facility": "National Clinical Hospital for Children Neurorehabilitation \"Dr. Nicolae Rob\u0103nescu\"",
+          "geoPoint": {
+            "lat": 44.43225,
+            "lon": 26.10626
+          },
+          "zip": "41408"
+        },
+        {
+          "city": "Belgrade",
+          "country": "Serbia",
+          "facility": "Clinic for Neurology and Psychiatry for Children and Youth",
+          "geoPoint": {
+            "lat": 44.80401,
+            "lon": 20.46513
+          },
+          "zip": "11000"
+        },
+        {
+          "city": "Belgrade",
+          "country": "Serbia",
+          "facility": "University Children's Hospital",
+          "geoPoint": {
+            "lat": 44.80401,
+            "lon": 20.46513
+          },
+          "zip": "11000"
+        },
+        {
+          "city": "Belgrade",
+          "country": "Serbia",
+          "facility": "Mother and Child Health Care Institute of Serbia \"Dr Vukan Cupic\"",
+          "geoPoint": {
+            "lat": 44.80401,
+            "lon": 20.46513
+          },
+          "zip": "190133"
+        },
+        {
+          "city": "Ljubljana",
+          "country": "Slovenia",
+          "facility": "University Medical Centre Ljubljana",
+          "geoPoint": {
+            "lat": 46.05108,
+            "lon": 14.50513
+          },
+          "zip": "1000"
+        },
+        {
+          "city": "Barcelona",
+          "country": "Spain",
+          "facility": "Hospital Sant Joan de Deu",
+          "geoPoint": {
+            "lat": 41.38879,
+            "lon": 2.15899
+          },
+          "zip": "8950"
+        },
+        {
+          "city": "Valencia",
+          "country": "Spain",
+          "facility": "Hospital Universitari i Politecnic La Fe de Valencia",
+          "geoPoint": {
+            "lat": 39.46975,
+            "lon": -0.37739
+          },
+          "zip": "46026"
+        },
+        {
+          "city": "Basel",
+          "country": "Switzerland",
+          "facility": "Universit\u00e4tsspital Basel",
+          "geoPoint": {
+            "lat": 47.55839,
+            "lon": 7.57327
+          },
+          "zip": "4031"
+        },
+        {
+          "city": "Kaohsiung",
+          "country": "Taiwan",
+          "facility": "Kaohsiung Medical University",
+          "geoPoint": {
+            "lat": 22.61626,
+            "lon": 120.31333
+          },
+          "zip": "80756"
+        },
+        {
+          "city": "Taipei",
+          "country": "Taiwan",
+          "facility": "National Taiwan University Hospital",
+          "geoPoint": {
+            "lat": 25.04776,
+            "lon": 121.53185
+          },
+          "zip": "10071"
+        },
+        {
+          "city": "Antalya",
+          "country": "Turkey",
+          "facility": "Akdeniz Universitesi Tip Fakultesi",
+          "geoPoint": {
+            "lat": 36.90812,
+            "lon": 30.69556
+          },
+          "zip": "07059"
+        },
+        {
+          "city": "Mersin",
+          "country": "Turkey",
+          "facility": "Mersin University Medical Faculty",
+          "geoPoint": {
+            "lat": 36.79526,
+            "lon": 34.61792
+          },
+          "zip": "33110"
+        },
+        {
+          "city": "Leeds",
+          "country": "United Kingdom",
+          "facility": "Leeds Teaching Hospitals NHS Trust",
+          "geoPoint": {
+            "lat": 53.79648,
+            "lon": -1.54785
+          },
+          "state": "West Yorkshire",
+          "zip": "LS1 3EX"
+        },
+        {
+          "city": "Birmingham",
+          "country": "United Kingdom",
+          "facility": "Birmingham Heartlands Hospital",
+          "geoPoint": {
+            "lat": 52.48142,
+            "lon": -1.89983
+          },
+          "zip": "B9 5SS"
+        },
+        {
+          "city": "London",
+          "country": "United Kingdom",
+          "facility": "UCL Institute of Child Health Great Ormond Street",
+          "geoPoint": {
+            "lat": 51.50853,
+            "lon": -0.12574
+          },
+          "zip": "WC1N 1EH"
+        }
+      ],
+      "overallOfficials": [
+        {
+          "affiliation": "Sarepta Therapeutics, Inc.",
+          "name": "Medical Director",
+          "role": "STUDY_DIRECTOR"
+        }
+      ]
+    },
+    "descriptionModule": {
+      "briefSummary": "Part 1 (dose escalation) will evaluate the safety and tolerability of 2 doses (100 milligrams/kilogram \\[mg/kg\\] and 200 mg/kg) of eteplirsen in approximately 10 participants with DMD; Part 2 (dose finding and dose comparison) will evaluate the efficacy and safety of the high doses (100 mg/kg and 200 mg/kg) of eteplirsen compared with that of the 30 mg/kg dose of eteplirsen, in approximately 144 participants with genetically confirmed deletion mutations amenable to treatment by skipping exon 51."
+    },
+    "designModule": {
+      "designInfo": {
+        "allocation": "RANDOMIZED",
+        "interventionModel": "PARALLEL",
+        "maskingInfo": {
+          "masking": "QUADRUPLE",
+          "maskingDescription": "Part 1 is open-label, dose escalation; Part 2 is double-blind, dose finding, and dose comparison",
+          "whoMasked": [
+            "PARTICIPANT",
+            "CARE_PROVIDER",
+            "INVESTIGATOR",
+            "OUTCOMES_ASSESSOR"
+          ]
+        },
+        "primaryPurpose": "TREATMENT"
+      },
+      "enrollmentInfo": {
+        "count": 160,
+        "type": "ACTUAL"
+      },
+      "phases": [
+        "PHASE3"
+      ],
+      "studyType": "INTERVENTIONAL"
+    },
+    "eligibilityModule": {
+      "eligibilityCriteria": "Inclusion Criteria:\n\n* Be a male with an established clinical diagnosis of DMD and an out-of-frame deletion mutation of the DMD gene amenable to exon 51 skipping.\n* Ambulatory participant, able to perform TTRISE in 10 seconds or less at the time of screening visit.\n* Able to walk independently without assistive devices.\n* Have intact right and left biceps muscles or an alternative upper arm muscle group.\n* Have been on a stable dose or dose equivalent of oral corticosteroids for at least 12 weeks prior to randomization and the dose is expected to remain constant (except for modifications to accommodate changes in weight and stress-related needs as per the recently published guidelines throughout the study.\n* For ages 7 years and older, has stable pulmonary function (forced vital capacity \u226550 percent (%) of predicted and no requirement for nocturnal ventilation). For ages 4 to 6 years, does not require support from ventilator or non-invasive ventilation at time of screening.\n\nExclusion Criteria:\n\n* Use of any pharmacologic treatment (other than corticosteroids) within 12 weeks prior to randomization.\n* Current or previous treatment with any other experimental pharmacologic treatment for DMD or any prior exposure to antisense oligonucleotide, gene therapy or gene editing; except the following: Ezutromid in the last 12 weeks prior to first dose; Drisapersen in the last 36 weeks prior to first dose; Suvodirsen in the last 12 weeks prior to first dose; Vamorolone in the last 12 weeks prior to first dose; Eteplirsen (previous or current use); and Tamoxifen in the last 4 weeks prior to first dose.\n* Major surgery within 3 months prior to randomization.\n* Presence of any other significant neuromuscular or genetic disease other than DMD.\n* Presence of any known impairment of renal function and/or other clinically significant illness.\n* Has evidence of cardiomyopathy, as defined by left ventricular ejection fraction less than \\<50% on the screening echocardiogram or Fridericia's correction formula (QTcF) \u2265450 millisecond based on the screening electrocardiograms (ECGs).\n\nOther inclusion/exclusion criteria apply.",
+      "healthyVolunteers": false,
+      "maximumAge": "13 Years",
+      "minimumAge": "4 Years",
+      "sex": "MALE",
+      "stdAges": [
+        "CHILD"
+      ]
+    },
+    "identificationModule": {
+      "acronym": "MIS51ON",
+      "briefTitle": "A Study to Compare Safety and Efficacy of High Doses of Eteplirsen in Participants With Duchenne Muscular Dystrophy (DMD) (MIS51ON)",
+      "nctId": "NCT03992430",
+      "officialTitle": "A Randomized, Double-Blind, Dose Finding and Comparison Study of the Safety and Efficacy of High Doses of Eteplirsen, Preceded by an Open-label Dose Escalation, in Patients With Duchenne Muscular Dystrophy With Deletion Mutations Amenable to Exon 51 Skipping",
+      "orgStudyIdInfo": {
+        "id": "4658-402"
+      },
+      "organization": {
+        "class": "INDUSTRY",
+        "fullName": "Sarepta Therapeutics, Inc."
+      },
+      "secondaryIdInfos": [
+        {
+          "id": "2018-001762-42",
+          "type": "EUDRACT_NUMBER"
+        },
+        {
+          "domain": "CTIS (EU)",
+          "id": "2024-511492-15-00",
+          "type": "REGISTRY"
+        }
+      ]
+    },
+    "outcomesModule": {
+      "primaryOutcomes": [
+        {
+          "measure": "Part 1: Incidence of Adverse Events (AEs)",
+          "timeFrame": "Up to Week 148"
+        },
+        {
+          "measure": "Part 2: Change From Baseline at Week 144 in the NSAA Total Score (for Final Analysis)",
+          "timeFrame": "Baseline, Week 144"
+        },
+        {
+          "measure": "Part 2: Change from Baseline at Week 72 or Week 96 in NSAA Total Score (for Conditional Efficacy Interim Analysis)",
+          "timeFrame": "Baseline, Week 72 or Week 96"
+        }
+      ],
+      "secondaryOutcomes": [
+        {
+          "measure": "Part 2: Change From Baseline in Time to Rise From the Floor, Time to Complete 10-Meter Walk/Run, and the Timed Stair Ascend Test",
+          "timeFrame": "Baseline, Week 144"
+        },
+        {
+          "measure": "Part 2: Change From Baseline in the Total Distance Walked During 6-Minute Walk Test (6MWT)",
+          "timeFrame": "Baseline, Week 144"
+        },
+        {
+          "measure": "Part 2: Change from Baseline at Week 144 in Forced Vital Capacity Percent Predicted (FVC%p)",
+          "timeFrame": "Baseline, Week 144"
+        },
+        {
+          "measure": "Part 2: Time to Loss of Ambulation (LOA)",
+          "timeFrame": "Baseline up to Week 144"
+        },
+        {
+          "measure": "Part 2: Change From Baseline in Skeletal Muscle Dystrophin Expression",
+          "timeFrame": "Baseline, Postdose (at Week 24, Week 48, or Week 144)"
+        },
+        {
+          "measure": "Part 2: Incidence of Adverse Events (AEs)",
+          "timeFrame": "Baseline up to Week 148"
+        },
+        {
+          "measure": "Part 2: Pharmacokinetic (PK) Plasma Concentration of Eteplirsen",
+          "timeFrame": "0 (predose) to 2 hours postdose up to Week 144"
+        }
+      ]
+    },
+    "oversightModule": {
+      "isFdaRegulatedDevice": false,
+      "isFdaRegulatedDrug": true,
+      "oversightHasDmc": true
+    },
+    "sponsorCollaboratorsModule": {
+      "leadSponsor": {
+        "class": "INDUSTRY",
+        "name": "Sarepta Therapeutics, Inc."
+      },
+      "responsibleParty": {
+        "type": "SPONSOR"
+      }
+    },
+    "statusModule": {
+      "completionDateStruct": {
+        "date": "2026-10-31",
+        "type": "ESTIMATED"
+      },
+      "expandedAccessInfo": {
+        "hasExpandedAccess": false
+      },
+      "lastUpdatePostDateStruct": {
+        "date": "2024-12-20",
+        "type": "ACTUAL"
+      },
+      "lastUpdateSubmitDate": "2024-12-18",
+      "overallStatus": "ACTIVE_NOT_RECRUITING",
+      "primaryCompletionDateStruct": {
+        "date": "2026-10-31",
+        "type": "ESTIMATED"
+      },
+      "startDateStruct": {
+        "date": "2020-07-13",
+        "type": "ACTUAL"
+      },
+      "statusVerifiedDate": "2024-12",
+      "studyFirstPostDateStruct": {
+        "date": "2019-06-20",
+        "type": "ACTUAL"
+      },
+      "studyFirstSubmitDate": "2019-06-18",
+      "studyFirstSubmitQcDate": "2019-06-18"
+    }
+  }
+}
