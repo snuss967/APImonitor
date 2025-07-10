@@ -23,7 +23,8 @@ import requests
 FILE = "study.json"
 
 def fetch_latest():
-    resp = requests.get(os.getenv("API_URL"))
+    url = os.getenv("API_URL")
+    resp = requests.get(url)
     resp.raise_for_status()
     return resp.json()
 
