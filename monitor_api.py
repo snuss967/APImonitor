@@ -8,7 +8,7 @@ Required secrets (exposed as env vars by the workflow):
   EMAIL_USER       – your full Gmail address
   EMAIL_PASSWORD   – Gmail App-Password (not your login pwd)
   RECIPIENT        – where the alert should go (hard-coded below too)
-  URL              – API URL to monitor
+  API_URL          – API URL to monitor
 """
 
 import difflib
@@ -20,12 +20,11 @@ from email.message import EmailMessage
 
 import requests
 
-URL  = os.getenv("URL")
+URL  = os.getenv("API_URL")
 FILE = "study.json"
 
 
 def fetch_latest():
-    print(URL)
     resp = requests.get(URL, timeout=30)
     resp.raise_for_status()
     return resp.json()
