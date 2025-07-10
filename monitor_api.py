@@ -20,12 +20,10 @@ from email.message import EmailMessage
 
 import requests
 
-URL  = os.getenv("API_URL")
 FILE = "study.json"
 
-
 def fetch_latest():
-    resp = requests.get(URL, timeout=30)
+    resp = requests.get(os.getenv("API_URL"), timeout=30)
     resp.raise_for_status()
     return resp.json()
 
