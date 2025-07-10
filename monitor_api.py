@@ -20,7 +20,7 @@ from email.message import EmailMessage
 
 import requests
 
-URL  = os.environ["URL"]
+URL  = os.getenv["URL"]
 FILE = "study.json"
 
 
@@ -40,8 +40,8 @@ def load_previous():
 def email_update(diff_text: str):
     msg = EmailMessage()
     msg["Subject"] = "API Update Detected"
-    msg["From"] = os.environ["EMAIL_USER"]
-    msg["To"] = os.environ.get("RECIPIENT", "snussrallah@rivalp.com")
+    msg["From"] = os.getenv["EMAIL_USER"]
+    msg["To"] = os.getenv("RECIPIENT")
     msg.set_content(
         "The record changed.\n\nUnified diff (truncated to 5 000 chars):\n\n"
         + diff_text[:5000]
@@ -50,7 +50,7 @@ def email_update(diff_text: str):
     ctx = ssl.create_default_context()
     with smtplib.SMTP("smtp.gmail.com", 587) as server:
         server.starttls(context=ctx)
-        server.login(os.environ["EMAIL_USER"], os.environ["EMAIL_PASSWORD"])
+        server.login(os.getenv["EMAIL_USER"], os.getenv["EMAIL_PASSWORD"])
         server.send_message(msg)
     print("Alert e-mail sent.")
 
