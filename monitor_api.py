@@ -23,7 +23,7 @@ import requests
 FILE = "study.json"
 
 def fetch_latest():
-    resp = requests.get("https://clinicaltrials.gov/api/v2/studies/NCT03992430", timeout=30)
+    resp = requests.get(os.getenv("API_URL"))
     resp.raise_for_status()
     return resp.json()
 
