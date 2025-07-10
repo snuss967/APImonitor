@@ -26,6 +26,11 @@ jobs:
         run: pip install requests
 
       - name: Run monitor script
+        env:
+          API_URL:  ${{ secrets.API_URL }}
+          EMAIL_PASSWORD:  ${{ secrets.EMAIL_PASSWORD }}
+          EMAIL_USER:    ${{ secrets.EMAIL_USER }}
+          RECIPIENT: ${{ secrets.RECIPIENT }}
         run: |
           python monitor_api.py
         continue-on-error: true
