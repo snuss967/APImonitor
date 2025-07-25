@@ -71,6 +71,11 @@
           "relevance": "HIGH"
         },
         {
+          "id": "M12092",
+          "name": "Muscular Diseases",
+          "relevance": "LOW"
+        },
+        {
           "id": "M4589",
           "name": "Atrophy",
           "relevance": "LOW"
@@ -78,11 +83,6 @@
         {
           "id": "M22697",
           "name": "Muscular Disorders, Atrophic",
-          "relevance": "LOW"
-        },
-        {
-          "id": "M12092",
-          "name": "Muscular Diseases",
           "relevance": "LOW"
         },
         {
@@ -158,7 +158,7 @@
       "removedCountries": [
         "Canada"
       ],
-      "versionHolder": "2025-07-24"
+      "versionHolder": "2025-07-25"
     }
   },
   "hasResults": false,
