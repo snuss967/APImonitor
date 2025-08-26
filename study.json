@@ -3,6 +3,10 @@
     "conditionBrowseModule": {
       "ancestors": [
         {
+          "id": "D009136",
+          "term": "Muscular Dystrophies"
+        },
+        {
           "id": "D020966",
           "term": "Muscular Disorders, Atrophic"
         },
@@ -23,112 +27,19 @@
           "term": "Nervous System Diseases"
         },
         {
+          "id": "D040181",
+          "term": "Genetic Diseases, X-Linked"
+        },
+        {
           "id": "D030342",
           "term": "Genetic Diseases, Inborn"
         },
         {
-          "id": "D040181",
-          "term": "Genetic Diseases, X-Linked"
-        }
-      ],
-      "browseBranches": [
-        {
-          "abbrev": "BC05",
-          "name": "Musculoskeletal Diseases"
-        },
-        {
-          "abbrev": "BC10",
-          "name": "Nervous System Diseases"
-        },
-        {
-          "abbrev": "BC16",
-          "name": "Diseases and Abnormalities at or Before Birth"
-        },
-        {
-          "abbrev": "All",
-          "name": "All Conditions"
-        },
-        {
-          "abbrev": "BC23",
-          "name": "Symptoms and General Pathology"
-        },
-        {
-          "abbrev": "Rare",
-          "name": "Rare Diseases"
-        }
-      ],
-      "browseLeaves": [
-        {
-          "asFound": "Muscular Dystrophy",
-          "id": "M12093",
-          "name": "Muscular Dystrophies",
-          "relevance": "HIGH"
-        },
-        {
-          "asFound": "Muscular Dystrophy, Duchenne",
-          "id": "M22185",
-          "name": "Muscular Dystrophy, Duchenne",
-          "relevance": "HIGH"
-        },
-        {
-          "id": "M12092",
-          "name": "Muscular Diseases",
-          "relevance": "LOW"
-        },
-        {
-          "id": "M4589",
-          "name": "Atrophy",
-          "relevance": "LOW"
-        },
-        {
-          "id": "M22697",
-          "name": "Muscular Disorders, Atrophic",
-          "relevance": "LOW"
-        },
-        {
-          "id": "M12097",
-          "name": "Musculoskeletal Diseases",
-          "relevance": "LOW"
-        },
-        {
-          "id": "M12411",
-          "name": "Neuromuscular Diseases",
-          "relevance": "LOW"
-        },
-        {
-          "id": "M23686",
-          "name": "Genetic Diseases, Inborn",
-          "relevance": "LOW"
-        },
-        {
-          "id": "M24877",
-          "name": "Genetic Diseases, X-Linked",
-          "relevance": "LOW"
-        },
-        {
-          "asFound": "Muscular Dystrophy",
-          "id": "T3963",
-          "name": "Muscular Dystrophy",
-          "relevance": "HIGH"
-        },
-        {
-          "asFound": "Duchenne",
-          "id": "T698",
-          "name": "Becker Muscular Dystrophy",
-          "relevance": "HIGH"
-        },
-        {
-          "asFound": "Duchenne Muscular Dystrophy",
-          "id": "T1945",
-          "name": "Duchenne Muscular Dystrophy",
-          "relevance": "HIGH"
+          "id": "D009358",
+          "term": "Congenital, Hereditary, and Neonatal Diseases and Abnormalities"
         }
       ],
       "meshes": [
-        {
-          "id": "D009136",
-          "term": "Muscular Dystrophies"
-        },
         {
           "id": "D020388",
           "term": "Muscular Dystrophy, Duchenne"
@@ -136,21 +47,10 @@
       ]
     },
     "interventionBrowseModule": {
-      "browseBranches": [
+      "meshes": [
         {
-          "abbrev": "PhSol",
-          "name": "Pharmaceutical Solutions"
-        },
-        {
-          "abbrev": "All",
-          "name": "All Drugs and Chemicals"
-        }
-      ],
-      "browseLeaves": [
-        {
-          "id": "M21860",
-          "name": "Pharmaceutical Solutions",
-          "relevance": "LOW"
+          "id": "C000611335",
+          "term": "eteplirsen"
         }
       ]
     },
@@ -158,7 +58,7 @@
       "removedCountries": [
         "Canada"
       ],
-      "versionHolder": "2025-08-25"
+      "versionHolder": "2025-08-26"
     }
   },
   "hasResults": false,
@@ -280,22 +180,22 @@
           "zip": "110231"
         },
         {
-          "city": "Medellin",
+          "city": "Medell\u00edn",
           "country": "Colombia",
           "facility": "Instituto Neurologico de Colombia (INDEC)",
           "geoPoint": {
-            "lat": 6.25184,
-            "lon": -75.56359
+            "lat": 6.245,
+            "lon": -75.57151
           },
           "zip": "50012"
         },
         {
-          "city": "Medellin",
+          "city": "Medell\u00edn",
           "country": "Colombia",
           "facility": "Hospital Pablo Tob\u00f3n Uribe",
           "geoPoint": {
-            "lat": 6.25184,
-            "lon": -75.56359
+            "lat": 6.245,
+            "lon": -75.57151
           },
           "zip": "50034"
         },
@@ -310,7 +210,7 @@
           "zip": "613 00"
         },
         {
-          "city": "Praha 5",
+          "city": "Prague",
           "country": "Czechia",
           "facility": "Fakultni nemocnice v Motole",
           "geoPoint": {
@@ -334,8 +234,8 @@
           "country": "France",
           "facility": "Hopital Femme Mere Enfant",
           "geoPoint": {
-            "lat": 45.73333,
-            "lon": 4.91667
+            "lat": 45.73865,
+            "lon": 4.91303
           },
           "zip": "69677"
         },
@@ -380,7 +280,7 @@
           "zip": "45147"
         },
         {
-          "city": "Freiburg",
+          "city": "Freiburg im Breisgau",
           "country": "Germany",
           "facility": "Universit\u00e4tsklinikum Freiburg",
           "geoPoint": {
@@ -397,7 +297,7 @@
             "lat": 38.05,
             "lon": 23.8
           },
-          "state": "Attiki",
+          "state": "Attica",
           "zip": "151 23"
         },
         {
@@ -405,8 +305,8 @@
           "country": "Hungary",
           "facility": "Semmelweis Egyetem Genomikai Medicina \u00e9s Ritka Betegsegek Intezete",
           "geoPoint": {
-            "lat": 47.49801,
-            "lon": 19.03991
+            "lat": 47.49835,
+            "lon": 19.04045
           },
           "zip": "1082"
         },
@@ -445,8 +345,8 @@
           "country": "India",
           "facility": "Jaicare Hospital (A Unit of Sarvee Integra Pvt Ltd.)",
           "geoPoint": {
-            "lat": 9.91769,
-            "lon": 78.11898
+            "lat": 9.919,
+            "lon": 78.11953
           },
           "zip": "626022"
         },
@@ -455,8 +355,8 @@
           "country": "India",
           "facility": "All India Institute of Medical Sciences",
           "geoPoint": {
-            "lat": 28.63576,
-            "lon": 77.22445
+            "lat": 28.62137,
+            "lon": 77.2148
           },
           "zip": "110029"
         },
@@ -465,8 +365,8 @@
           "country": "India",
           "facility": "Sir Ganga Ram Hospital",
           "geoPoint": {
-            "lat": 28.63576,
-            "lon": 77.22445
+            "lat": 28.62137,
+            "lon": 77.2148
           },
           "zip": "110060"
         },
@@ -491,7 +391,7 @@
           "zip": "632004"
         },
         {
-          "city": "Dublin 1",
+          "city": "Dublin",
           "country": "Ireland",
           "facility": "Children's Health Ireland (CHI) at Temple Street",
           "geoPoint": {
@@ -505,8 +405,8 @@
           "country": "Italy",
           "facility": "IRCCS Instituto Gianna Gaslini",
           "geoPoint": {
-            "lat": 44.40478,
-            "lon": 8.94438
+            "lat": 45.21604,
+            "lon": 11.87211
           },
           "zip": "16147"
         },
@@ -561,52 +461,12 @@
           "zip": "22110"
         },
         {
-          "city": "Daegu",
-          "country": "Korea, Republic of",
-          "facility": "Kyungpook National University Chilgok Hospital",
-          "geoPoint": {
-            "lat": 35.87028,
-            "lon": 128.59111
-          },
-          "zip": "41404"
-        },
-        {
-          "city": "Seoul",
-          "country": "Korea, Republic of",
-          "facility": "Seoul National University Hospital",
-          "geoPoint": {
-            "lat": 37.566,
-            "lon": 126.9784
-          },
-          "zip": "03080"
-        },
-        {
-          "city": "Seoul",
-          "country": "Korea, Republic of",
-          "facility": "Samsung Medical Center",
-          "geoPoint": {
-            "lat": 37.566,
-            "lon": 126.9784
-          },
-          "zip": "6351"
-        },
-        {
-          "city": "Yangsan",
-          "country": "Korea, Republic of",
-          "facility": "Pusan National University Yangsan Hospital",
-          "geoPoint": {
-            "lat": 35.34199,
-            "lon": 129.03358
-          },
-          "zip": "50612"
-        },
-        {
           "city": "Culiac\u00e1n",
           "country": "Mexico",
           "facility": "Neurociencias Estudios Cl\u00ednicos S.C.",
           "geoPoint": {
-            "lat": 24.79032,
-            "lon": -107.38782
+            "lat": 24.80209,
+            "lon": -107.39421
           },
           "state": "Sinaloa",
           "zip": "80020"
@@ -676,10 +536,10 @@
           "country": "Poland",
           "facility": "Klinika Neurologii Rozwojowej",
           "geoPoint": {
-            "lat": 54.35205,
-            "lon": 18.64637
+            "lat": 54.35227,
+            "lon": 18.64912
           },
-          "state": "Pomorskie",
+          "state": "Pomeranian Voivodeship",
           "zip": "80-211"
         },
         {
@@ -733,6 +593,46 @@
           "zip": "1000"
         },
         {
+          "city": "Daegu",
+          "country": "South Korea",
+          "facility": "Kyungpook National University Chilgok Hospital",
+          "geoPoint": {
+            "lat": 35.87028,
+            "lon": 128.59111
+          },
+          "zip": "41404"
+        },
+        {
+          "city": "Seoul",
+          "country": "South Korea",
+          "facility": "Seoul National University Hospital",
+          "geoPoint": {
+            "lat": 37.566,
+            "lon": 126.9784
+          },
+          "zip": "03080"
+        },
+        {
+          "city": "Seoul",
+          "country": "South Korea",
+          "facility": "Samsung Medical Center",
+          "geoPoint": {
+            "lat": 37.566,
+            "lon": 126.9784
+          },
+          "zip": "6351"
+        },
+        {
+          "city": "Yangsan",
+          "country": "South Korea",
+          "facility": "Pusan National University Yangsan Hospital",
+          "geoPoint": {
+            "lat": 35.34199,
+            "lon": 129.03358
+          },
+          "zip": "50612"
+        },
+        {
           "city": "Barcelona",
           "country": "Spain",
           "facility": "Hospital Sant Joan de Deu",
@@ -747,8 +647,8 @@
           "country": "Spain",
           "facility": "Hospital Universitari i Politecnic La Fe de Valencia",
           "geoPoint": {
-            "lat": 39.46975,
-            "lon": -0.37739
+            "lat": 39.47391,
+            "lon": -0.37966
           },
           "zip": "46026"
         },
@@ -763,7 +663,7 @@
           "zip": "4031"
         },
         {
-          "city": "Kaohsiung",
+          "city": "Kaohsiung City",
           "country": "Taiwan",
           "facility": "Kaohsiung Medical University",
           "geoPoint": {
@@ -777,14 +677,14 @@
           "country": "Taiwan",
           "facility": "National Taiwan University Hospital",
           "geoPoint": {
-            "lat": 25.04776,
-            "lon": 121.53185
+            "lat": 25.05306,
+            "lon": 121.52639
           },
           "zip": "10071"
         },
         {
           "city": "Antalya",
-          "country": "Turkey",
+          "country": "Turkey (T\u00fcrkiye)",
           "facility": "Akdeniz Universitesi Tip Fakultesi",
           "geoPoint": {
             "lat": 36.90812,
@@ -794,11 +694,11 @@
         },
         {
           "city": "Mersin",
-          "country": "Turkey",
+          "country": "Turkey (T\u00fcrkiye)",
           "facility": "Mersin University Medical Faculty",
           "geoPoint": {
-            "lat": 36.79526,
-            "lon": 34.61792
+            "lat": 36.81196,
+            "lon": 34.63886
           },
           "zip": "33110"
         },
